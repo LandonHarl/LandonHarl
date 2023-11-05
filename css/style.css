@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&family=Roboto+Condensed&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    background: linear-gradient(beige,white);
+}
+@media (min-width: 900px){
+    img {
+        height: 225px;
+        width: auto;
+    }
+    .col1 {
+        float: left;
+    }
+
+    .col2 {
+        width: 70%;
+        float: left;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 899.99px){
+    img {
+        height: 225px;
+        width: auto;
+        padding-top: 40px;
+    }
+    }
+@media (max-width: 600px){
+    img {
+        height: 200px;
+        width: auto;
+        padding-top: 40px;
+    }
+}
+
+
+.experience {
+    clear:both;
+}
+
+.experience p {
+    font-size: 17px;
+}
+
+
+.content {
+    text-align: center;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+header h1 {
+    padding-top: 15px;
+    font-weight: 900;
+    text-decoration: underline;
+    color: gray;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+nav {
+    position: fixed;
+    text-align: center;
+    top: 10px;
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+    font-style: normal;
+    color:white;
+    background-color: black;
+    font-weight: bolder;
+    padding: 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+.software a {
+    color: black;
+    text-decoration: underline;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    font-style: oblique;
+}
+
+footer a:before {
+    content: "[";
+}
+
+footer a:after {
+    content: "]";
+}
+
+footer a:hover {
+    color: blue;
+    text-decoration: underline;
+    font-size: large;
+    font-weight: 800;
+    background-color: white;
+    font-style: normal;
+}
+
+.experience h3 {
+    text-decoration: underline;
+}
+p {
+    line-height: 1.5;
+}
+
+.workplace {
+    float: left;
+}
+
+#pic {
+    animation-name: swipe;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+#ihcc {
+    height: 200px;
+    width: auto;
+    padding-left: 350px;
+    animation-name: ihcc;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 2;
+}
+
+@keyframes ihcc {
+    0% {
+        transform: translateX(-50px);
+    }
+    25% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    75% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateX(0px), translateY(0px);
+    }
+}
+
+@keyframes swipe {
+    0% {
+        transform: translateX(-550px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
